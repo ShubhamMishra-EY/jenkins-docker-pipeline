@@ -39,6 +39,12 @@ pipeline {
                     sh 'docker run -d --name shubham-python -p 85:5000 shubham-python'
                 }
             }
+             steps {
+                script {
+                    // Run the Docker container
+                    sh 'docker ls -a'
+                }
+            }
         }
     }
 
