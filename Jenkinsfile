@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone the repository containing the calculator app
-                git 'https://github.com/ShubhamMishra-EY/jenkins-docker-pipeline.git' // Replace with your actual repository URL
+               checkout scm // Replace with your actual repository URL
             }
         }
 
